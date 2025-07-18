@@ -41,6 +41,18 @@ h2 {
   color: #000;
 }
 
+.step-selector {
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.step-selector select {
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
 /* Button styles */
 button {
   margin: 0 10px;
@@ -71,4 +83,44 @@ button:nth-of-type(3) {
 button:hover {
   opacity: 0.85;
   transform: scale(1.05);
+}
+
+/* 📌 Add this block at the end of your CSS */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  div {
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  button {
+    padding: 10px 18px;
+    font-size: 14px;
+    margin: 8px 5px;
+  }
+
+  .step-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-selector select {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
