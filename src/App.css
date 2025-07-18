@@ -1,38 +1,74 @@
-.App {
+/* Reset default margins and set full screen center alignment */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Outer container box */
+div {
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Heading style */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* "Counter:" label */
+.label {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #666;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Counter number */
+h2 {
+  font-size: 50px;
+  margin: 10px 0 30px;
+  color: #000;
+}
+
+/* Button styles */
+button {
+  margin: 0 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Individual button colors */
+button:nth-of-type(1) {
+  background-color: #4caf50;
+  color: white;
+}
+button:nth-of-type(2) {
+  background-color: #f44336;
+  color: white;
+}
+button:nth-of-type(3) {
+  background-color: #2196f3;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Button hover effect */
+button:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
 }
